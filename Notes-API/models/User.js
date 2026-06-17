@@ -40,7 +40,7 @@ const mongoose = require("mongoose");
         
         //3-create model
         
-            const User =mongoose.model(User,userSchema);
+            const User =mongoose.model("User",userSchema);
 
 
 
