@@ -2,12 +2,60 @@
     
     
     // req user model from models
-
+  
 
  const User=require("../models/User");
  const { registerSchema ,loginSchema} =require("./validation/authValidation")
-const bcrypt= require("bcrypt")
-const jwt= require("jsonwebtoken")
+
+
+
+
+
+
+
+
+
+
+ const bcrypt= require("bcrypt")
+   
+    // bcrypt.hash 
+        //  bcrypt.hash(password,10) 
+       // used in register step to hash the inter password
+
+     // bcrypt.compare 
+        //  bcrypt.compare(password,user.password) 
+        // used in log
+        //  in step to compare bet the 2 passwords (password, user.password)
+        
+        
+        
+        
+        
+        
+       
+
+
+    const jwt= require("jsonwebtoken")
+
+         // jwt.sign() 
+     //    jwt.sign({user_payload which is user_id,user_role}, Secret_Key , {expiresin: "1d"}) 
+            //used in Login step to gen token  
+            // it works as AuthC
+
+         // jwt.verify()
+
+            //used in after Login step to protect the Route or endpint 
+            // it works as AuthZ
+ 
+        
+
+
+
+
+
+
+
+
 
 
  const register = async (req,res) => {

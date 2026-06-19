@@ -16,7 +16,7 @@ const mongoose = require("mongoose");
         const userSchema = new  mongoose.Schema ({
 
           username:{
-            type:String,
+            type:String,        // type with Capital letter here in model  
             required:true,
             trim:true,   
           } , 

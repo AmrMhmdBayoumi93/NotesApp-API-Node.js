@@ -44,7 +44,7 @@
 
 
 
-      // last req
+      // last req style
   // app.get("routeName",(req,res) => { logic which will be controller } )
 
 
@@ -59,6 +59,8 @@
 
   // video3
 
+
+  // /api/authRoutes
     const authRoutes=require("./routes/authRoutes")
       app.use("/api",authRoutes)
       

@@ -6,7 +6,7 @@
 
 // req auth controller
     const {register,login,logout}= require ("../controllers/authController")
-
+ 
 
     // reg route
         router.post("/register",register)
