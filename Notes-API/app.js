@@ -64,8 +64,9 @@
     const authRoutes=require("./routes/authRoutes")
       app.use("/api",authRoutes)
       
-
-
+    const noteRoutes=require("./routes/noteRoutes")
+       app.use("/api",noteRoutes)
+      
 
 
 

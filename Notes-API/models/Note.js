@@ -14,6 +14,7 @@ const mongoose = require("mongoose");
   // 2- create schema
         const noteSchema = new mongoose.Schema ({
 
+
             content:{
                 type:String,
                 required:true,
@@ -21,7 +22,6 @@ const mongoose = require("mongoose");
             },
             isCompleted:{
                 type:Boolean,
-
                 default:false
 
             }, user:{
@@ -41,7 +41,7 @@ const mongoose = require("mongoose");
         
         //3-create model
         
-            const Note =mongoose.model(Note,noteSchema);
+            const Note =mongoose.model("Note",noteSchema);
 
 
 

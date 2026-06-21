@@ -5,7 +5,7 @@
   
 
  const User=require("../models/User");
- const { registerSchema ,loginSchema} =require("./validation/authValidation")
+ const { registerSchemaValidation ,loginSchemaValidation} =require("./validation/authValidation")
 
 
 
@@ -73,7 +73,7 @@
         //first validate req.body by joi    and store it in {error,value}
 
         
-        const {error,value} =registerSchema.validate(req.body,
+        const {error,value} =registerSchemaValidation.validate(req.body,
                { abortEarly:false,
                 stripUnknown:true,
         })
@@ -192,7 +192,7 @@ if (existUser){
         //first validate req.body by joi    and store it in  {error,value}
 
         
-        const {error,value} =loginSchema.validate(req.body,
+        const {error,value} =loginSchemaValidation.validate(req.body,
                {
                  abortEarly:false,
                 stripUnknown:true,

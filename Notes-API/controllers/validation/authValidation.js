@@ -1,11 +1,11 @@
 
 const Joi =require("joi")
-
  
+     
 
         // get data from fe and vaildate it using joi
 
-    const registerSchema=Joi.object({
+    const registerSchemaValidation=Joi.object({
          
         // type with small letter here in  joi validation
 
@@ -16,11 +16,24 @@ const Joi =require("joi")
 
 
 
-    const loginSchema=Joi.object({
+    const loginSchemaValidation=Joi.object({
        
         email:Joi.string().email().required() ,
         password:Joi.string().min(6).required()
     });
 
 
-    module.exports ={registerSchema,loginSchema }
+
+
+
+     
+
+
+
+
+
+
+
+
+
+    module.exports ={registerSchemaValidation,loginSchemaValidation }
